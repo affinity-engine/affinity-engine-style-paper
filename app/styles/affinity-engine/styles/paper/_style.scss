@@ -1,0 +1,85 @@
+@mixin ae-paper-base {
+  border-style: $ae-paper-border-style;
+  border-color: $ae-paper-border-color;
+  background: $ae-paper-background;
+  color: $ae-paper-color;
+}
+
+.ae-paper {
+  @include ae-paper-base;
+
+  .ae-button {
+    @include ae-highlight($ae-paper-highlight-color);
+    border-style: $ae-button-paper-border-style;
+    border-color: $ae-button-paper-border-color;
+    background: $ae-button-paper-background-color;
+    color: $ae-button-paper-color;
+
+    &:hover, &:focus {
+      background-color: $ae-button-paper-hover-background-color;
+      color: $ae-button-paper-hover-color;
+      border-color: $ae-button-paper-hover-border-color;
+    }
+  }
+
+  .ae-input {
+    @include ae-highlight($ae-paper-highlight-color);
+    border-color: $ae-input-paper-border-color;
+    border-style: $ae-input-ember-border-style;
+    background: $ae-input-paper-background-color;
+    color: $ae-input-paper-color;
+
+    &:focus {
+      border-color: $ae-input-paper-focus-border-color;
+    }
+  }
+}
+
+$ae-menu-included: false !default;
+$ae-menu-bar-included: false !default;
+$ae-text-included: false !default;
+
+@if ($ae-menu-included == true) {
+  .ae-menu.ae-paper {
+    @extend .ae-paper;
+
+    background-color: $ae-menu-paper-background-color;
+    opacity: $ae-menu-paper-opacity;
+
+    .ae-menu-header {
+      @include ae-highlight($ae-paper-highlight-color);
+      font-family: $ae-menu-header-paper-font-family;
+      color: $ae-menu-header-paper-color;
+    }
+
+    .ae-menu-option {
+      font-weight: $ae-menu-option-paper-font-weight;
+      font-family: $ae-menu-option-paper-font-family;
+    }
+  }
+}
+
+@if ($ae-menu-bar-included == true) {
+  .ae-menu-bar.ae-paper {
+    @extend .ae-paper;
+  }
+}
+
+@if ($ae-text-included == true) {
+  .ae-text.ae-paper {
+    opacity: $ae-text-paper-opacity;
+    font-family: $ae-text-paper-font-family;
+
+    .ae-text-caption {
+      @extend .ae-paper;
+      @include ae-highlight($ae-paper-highlight-color);
+
+      font-family: $ae-text-caption-paper-font-family;
+      font-weight: $ae-text-caption-paper-font-weight;
+    }
+
+    .ae-text-body, .lxl-letter {
+      @include ae-highlight($ae-paper-highlight-color);
+    }
+  }
+}
