@@ -35,51 +35,41 @@
   }
 }
 
-$ae-menu-included: false !default;
-$ae-menu-bar-included: false !default;
-$ae-text-included: false !default;
+.ae-menu.ae-paper {
+  @extend .ae-paper;
 
-@if ($ae-menu-included == true) {
-  .ae-menu.ae-paper {
-    @extend .ae-paper;
+  background-color: $ae-menu-paper-background-color;
+  opacity: $ae-menu-paper-opacity;
 
-    background-color: $ae-menu-paper-background-color;
-    opacity: $ae-menu-paper-opacity;
+  .ae-menu-header {
+    @include ae-highlight($ae-paper-highlight-color);
+    font-family: $ae-menu-header-paper-font-family;
+    color: $ae-menu-header-paper-color;
+  }
 
-    .ae-menu-header {
-      @include ae-highlight($ae-paper-highlight-color);
-      font-family: $ae-menu-header-paper-font-family;
-      color: $ae-menu-header-paper-color;
-    }
-
-    .ember-columnar-menu-option-button {
-      font-weight: $ae-menu-option-paper-font-weight;
-      font-family: $ae-menu-option-paper-font-family;
-    }
+  .ember-columnar-menu-option-button {
+    font-weight: $ae-menu-option-paper-font-weight;
+    font-family: $ae-menu-option-paper-font-family;
   }
 }
 
-@if ($ae-menu-bar-included == true) {
-  .ae-menu-bar.ae-paper {
-    @extend .ae-paper;
-  }
+.ae-menu-bar.ae-paper {
+  @extend .ae-paper;
 }
 
-@if ($ae-text-included == true) {
-  .ae-text.ae-paper {
-    opacity: $ae-text-paper-opacity;
-    font-family: $ae-text-paper-font-family;
+.ae-text.ae-paper {
+  opacity: $ae-text-paper-opacity;
+  font-family: $ae-text-paper-font-family;
 
-    .ae-text-caption {
-      @extend .ae-paper;
-      @include ae-highlight($ae-paper-highlight-color);
+  .ae-text-caption {
+    @extend .ae-paper;
+    @include ae-highlight($ae-paper-highlight-color);
 
-      font-family: $ae-text-caption-paper-font-family;
-      font-weight: $ae-text-caption-paper-font-weight;
-    }
+    font-family: $ae-text-caption-paper-font-family;
+    font-weight: $ae-text-caption-paper-font-weight;
+  }
 
-    .ae-text-body, .lxl-letter {
-      @include ae-highlight($ae-paper-highlight-color);
-    }
+  .ae-text-body, .lxl-letter {
+    @include ae-highlight($ae-paper-highlight-color);
   }
 }
