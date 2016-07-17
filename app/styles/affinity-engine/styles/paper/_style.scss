@@ -25,7 +25,7 @@
   .ae-input {
     @include ae-highlight($ae-paper-highlight-color);
     border-color: $ae-input-paper-border-color;
-    border-style: $ae-input-ember-border-style;
+    border-style: $ae-input-paper-border-style;
     background: $ae-input-paper-background-color;
     color: $ae-input-paper-color;
 
