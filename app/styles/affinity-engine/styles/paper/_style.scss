@@ -69,7 +69,7 @@
     font-weight: $ae-text-caption-paper-font-weight;
   }
 
-  .ae-text-body, .lxl-letter {
+  .lxl-body, .lxl-letter {
     @include ae-highlight($ae-paper-highlight-color);
   }
 }
