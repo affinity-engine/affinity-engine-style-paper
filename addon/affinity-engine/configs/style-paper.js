@@ -1,6 +1,8 @@
 export default {
   priority: 1.3,
-  classNames: {
-    decorative: ['ae-paper']
+  global: {
+    classNames: {
+      decorative: ['ae-paper']
+    }
   }
 };
