@@ -22,7 +22,7 @@
     }
   }
 
-  .ae-input {
+  .ae-input, .ae-input-accept {
     @include ae-highlight($ae-paper-highlight-color);
     border-color: $ae-input-paper-border-color;
     border-style: $ae-input-paper-border-style;
