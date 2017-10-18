@@ -16,10 +16,15 @@ $ae-button-paper-hover-background-color: $ae-paper-secondary-color !default;
 $ae-button-paper-hover-color: $ae-paper-primary-color !default;
 $ae-button-paper-hover-border-color: $ae-paper-secondary-color !default;
 
+$ae-button-paper-selected-background-color: $ae-paper-highlight-color !default;
+$ae-button-paper-selected-color: $ae-paper-primary-color !default;
+$ae-button-paper-selected-border-color: $ae-paper-highlight-color !default;
+
 $ae-input-paper-background-color: $ae-paper-primary-color !default;
 $ae-input-paper-color: $ae-paper-secondary-color !default;
 $ae-input-paper-border-color: $ae-paper-secondary-color !default;
 $ae-input-paper-border-style: $ae-button-paper-border-style !default;
+$ae-input-paper-box-shadow: none !default;
 
 $ae-input-paper-focus-border-color: $ae-paper-secondary-color !default;
 
