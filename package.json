@@ -1,6 +1,6 @@
 {
   "name": "affinity-engine-style-paper",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Black & white never looked so nice",
   "keywords": [
     "ember-addon",
@@ -51,6 +51,7 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",
+    "demoURL": "http://www.affinityengine.org/#/api/styles/paper",
     "after": [
       "affinity-engine-style-base"
     ]
